@@ -35,9 +35,9 @@ export function ContactSection() {
                   <br />
                   Financial District
                   <br />
-                  Nairobi, Kenya
+                  Addis Ababa, Ethiopia
                   <br />
-                  P.O. Box 12345-00100
+                  P.O. Box 1000
                 </p>
               </CardContent>
             </Card>
