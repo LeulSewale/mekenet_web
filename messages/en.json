@@ -1,0 +1,240 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "sendMessage": "Send Message",
+    "loading": "Loading...",
+    "tryAgain": "Try Again",
+    "refreshPage": "Refresh Page"
+  },
+  "header": {
+    "title": "Mekenet SACCO LTD",
+    "shortTitle": "Mekenet",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "visionMission": "Vision & Mission",
+      "contact": "Contact",
+      "loanApplication": "Loan Application"
+    }
+  },
+  "hero": {
+    "title": "Welcome to Mekenet SACCO LTD",
+    "description": "Your trusted financial partner providing innovative digital banking solutions, savings, and credit services to empower your financial growth and security.",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "features": {
+      "community": {
+        "title": "Community Focused",
+        "description": "Serving our members with personalized financial solutions"
+      },
+      "secure": {
+        "title": "Secure & Reliable",
+        "description": "Advanced security measures to protect your financial assets"
+      },
+      "growth": {
+        "title": "Growth Oriented",
+        "description": "Helping you achieve your financial goals and aspirations"
+      }
+    }
+  },
+  "visionMission": {
+    "title": "Our Vision & Mission",
+    "subtitle": "Driving financial inclusion and empowerment through innovative digital solutions",
+    "vision": {
+      "title": "Our Vision",
+      "description1": "To be the leading digital financial cooperative in our region, providing accessible, innovative, and member-centric financial services that empower individuals and communities to achieve financial prosperity and security.",
+      "description2": "We envision a future where every member has the tools and support needed to build wealth, secure their families' futures, and contribute to sustainable community development."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description1": "To provide exceptional financial services through innovative digital platforms, fostering financial literacy, promoting savings culture, and offering affordable credit solutions to our members.",
+      "description2": "We are committed to delivering personalized service, maintaining the highest standards of integrity, and continuously adapting to meet the evolving needs of our community."
+    },
+    "values": {
+      "title": "Our Core Values",
+      "integrity": {
+        "title": "Integrity",
+        "description": "Maintaining honesty and transparency in all our dealings"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Embracing technology to deliver cutting-edge solutions"
+      },
+      "community": {
+        "title": "Community",
+        "description": "Putting our members and community first in everything we do"
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "Striving for the highest quality in service delivery"
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Ready to start your financial journey with us? Contact our team today",
+    "address": {
+      "title": "Our Address",
+      "content": "Mekenet SACCO LTD\n123 Digital Avenue\nFinancial District\nAddis Ababa, Ethiopia\nP.O. Box 1000"
+    },
+    "phone": {
+      "title": "Phone"
+    },
+    "email": {
+      "title": "Email"
+    },
+    "hours": {
+      "title": "Business Hours",
+      "weekday": "Monday - Friday: 8:00 AM - 5:00 PM",
+      "saturday": "Saturday: 9:00 AM - 1:00 PM",
+      "sunday": "Sunday: Closed",
+      "online": "24/7 Online Services Available"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Message",
+      "firstNamePlaceholder": "Enter your first name",
+      "lastNamePlaceholder": "Enter your last name",
+      "emailPlaceholder": "Enter your email",
+      "phonePlaceholder": "Enter your phone number",
+      "subjectPlaceholder": "Enter message subject",
+      "messagePlaceholder": "Enter your message",
+      "sendMessage": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "successDescription": "Thank you for your message! We'll get back to you soon.",
+      "error": "Failed to send message",
+      "errorDescription": "Please try again later."
+    }
+  },
+  "footer": {
+    "description": "Your trusted financial partner providing innovative digital banking solutions for a secure financial future.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contactInfo": "Contact Info",
+    "home": "Home",
+    "about": "About Us",
+    "visionMission": "Vision & Mission",
+    "contact": "Contact",
+    "savingsAccounts": "Savings Accounts",
+    "loansCredit": "Loans & Credit",
+    "mobileBanking": "Mobile Banking",
+    "investmentPlans": "Investment Plans",
+    "copyright": "© {year} Mekenet SACCO LTD. All rights reserved."
+  },
+  "error": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please try refreshing the page.",
+    "errorLabel": "Error"
+  },
+  "loanApplication": {
+    "title": "Loan Application",
+    "subtitle": "Mekenet Money Savings and Credit Cooperative Society (P.L.C.)",
+    "sections": {
+      "applicantInfo": "Applicant Information",
+      "loanRequest": "Loan Request Details",
+      "financialStanding": "Financial Standing and Supporting Documents",
+      "declaration": "Declaration and Signature"
+    },
+    "fields": {
+      "accountNumber": "Account Number",
+      "fullName": "Name with Grandfather's Name",
+      "gender": "Gender",
+      "genderMale": "Male",
+      "genderFemale": "Female",
+      "regularJob": "Regular Job",
+      "monthlyIncome": "Monthly Income",
+      "estimatedAnnualIncome": "Estimated Annual Income",
+      "addressZone": "Address, Zone",
+      "woreda": "Woreda/District",
+      "city": "City",
+      "kebele": "Kebele/Neighborhood",
+      "houseNumber": "House Number",
+      "workPhone": "Work Phone Number",
+      "personalMobile": "Personal Mobile Number",
+      "loanAmount": "Requested Loan Amount",
+      "loanAmountInNumbers": "(in numbers)",
+      "loanAmountInWords": "Loan Amount (in words)",
+      "loanMonth": "Month of Loan Application",
+      "loanYear": "Year of Loan Application",
+      "loanReason": "Reason for Loan Application in detail",
+      "regularSavings": "Amount of regular savings accumulated in the society",
+      "lotterySavings": "Amount of lottery savings accumulated in the society",
+      "totalSavings": "Total",
+      "otherDebts": "If there is other debt/more than one debt, specify for each",
+      "otherDebtsDescription": "Specify each debt separately if applicable",
+      "existingLoanAmount": "Loan amount",
+      "loanSource": "Source of the loan money",
+      "lenderNameAddress": "Lender's name and address",
+      "supportingDocuments": "List of various attached supporting documents",
+      "declarationAgree": "I confirm that the information provided is accurate, request the loan in accordance with the society's bylaws, and agree to use the borrowed funds only for the stated purpose and fulfill all society requirements.",
+      "signature": "Signature",
+      "signatureName": "Name"
+    },
+    "declarationText": "I hereby declare that the information provided in this loan application is true and accurate to the best of my knowledge. I understand that any false information may result in the rejection of my application or legal action. I agree to use the loan funds solely for the purpose stated in this application and to comply with all terms and conditions set forth by the Mekenet Money Savings and Credit Cooperative Society.",
+    "form": {
+      "submit": "Submit Application",
+      "submitting": "Submitting...",
+      "reset": "Reset Form",
+      "success": "Application submitted successfully!",
+      "successDescription": "Thank you for your loan application. We will review it and get back to you soon.",
+      "error": "Failed to submit application",
+      "errorDescription": "Please check your information and try again."
+    }
+  },
+  "loanCommitteeDecision": {
+    "title": "Loan Committee Decision",
+    "subtitle": "Mekenet Money Savings and Credit Cooperative Society (P.L.C.)",
+    "sections": {
+      "header": "Document Information",
+      "decision": "Loan Committee Decision",
+      "committeeMembers": "Committee Members Signatures"
+    },
+    "fields": {
+      "documentNumber": "Document Number",
+      "date": "Date",
+      "to": "To",
+      "committeeMeetingDate": "Committee Meeting Date",
+      "committeeMeetingYear": "Committee Meeting Year",
+      "committeeMember": "Committee Member (Mr./Mrs./Ms.)",
+      "meetingLocation": "Meeting Location",
+      "loanAmountInNumbers": "Requested Loan Amount",
+      "loanAmountInFederal": "Requested Loan Amount (in Federal Birr)",
+      "approvedAmountInNumbers": "Approved Loan Amount",
+      "approvedAmountInFederal": "Approved Loan Amount (in Federal Birr)",
+      "inBirr": "in Birr",
+      "inFederalBirr": "in Federal Birr",
+      "decision": "Decision",
+      "decisionApproved": "Approved",
+      "decisionRejected": "Rejected",
+      "decisionPartial": "Partially Approved",
+      "rejectionReason": "Reason for Decision",
+      "rejectionReasonDescription": "Required if loan was rejected or partially approved",
+      "memberName": "Member Name",
+      "signature": "Signature"
+    },
+    "decisionText": {
+      "part1": "The Loan Committee, having assembled on the date and year specified above, and after reviewing the loan application submitted based on the loan disbursement guidelines, has decided:",
+      "part2": "We have decided unanimously as detailed above."
+    },
+    "form": {
+      "submit": "Submit Decision",
+      "submitting": "Submitting...",
+      "reset": "Reset Form",
+      "success": "Decision submitted successfully!",
+      "successDescription": "The loan committee decision has been recorded.",
+      "error": "Failed to submit decision",
+      "errorDescription": "Please check your information and try again."
+    }
+  }
+}
+

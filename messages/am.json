@@ -1,0 +1,240 @@
+{
+  "common": {
+    "home": "መነሻ",
+    "about": "ስለእኛ",
+    "contact": "ያግኙን",
+    "getStarted": "ጀምር",
+    "learnMore": "ተጨማሪ ይወቁ",
+    "sendMessage": "መልእክት ይላኩ",
+    "loading": "በመጫን ላይ...",
+    "tryAgain": "እንደገና ይሞክሩ",
+    "refreshPage": "ገጹን ያድሱ"
+  },
+  "header": {
+    "title": "መከነት ሳኮ ሊሚትድ",
+    "shortTitle": "መከነት",
+    "nav": {
+      "home": "መነሻ",
+      "about": "ስለእኛ",
+      "visionMission": "ራዕይ እና ተልዕኮ",
+      "contact": "ያግኙን",
+      "loanApplication": "የብድር ማመልከቻ"
+    }
+  },
+  "hero": {
+    "title": "ወደ መከነት ሳኮ ሊሚትድ እንኳን ደህና መጡ",
+    "description": "የእርስዎ አስተማማኝ የፋይናንስ አጋር፣ የፋይናንስ እድገትዎን እና ደህንነትዎን ለማሳደግ የሚረዱ የዲጂታል ባንኪንግ መፍትሄዎች፣ ቁጠባ እና ክሬዲት አገልግሎቶችን የሚሰጥ የፈጠራ ዲጂታል ባንኪንግ መፍትሄዎች።",
+    "getStarted": "ጀምር",
+    "learnMore": "ተጨማሪ ይወቁ",
+    "features": {
+      "community": {
+        "title": "የማህበረሰብ ትኩረት",
+        "description": "አባላቶቻችንን በግላዊ የፋይናንስ መፍትሄዎች ማገልገል"
+      },
+      "secure": {
+        "title": "ደህንነቱ የተጠበቀ እና አስተማማኝ",
+        "description": "የፋይናንስ ንብረቶችዎን ለመጠበቅ የላቀ የደህንነት እርምጃዎች"
+      },
+      "growth": {
+        "title": "የእድገት ትኩረት",
+        "description": "የፋይናንስ ግቦችዎን እና ምኞቶችዎን ለማሳካት ማገዝ"
+      }
+    }
+  },
+  "visionMission": {
+    "title": "ራዕያችን እና ተልዕኮ",
+    "subtitle": "በፈጠራ ዲጂታል መፍትሄዎች የፋይናንስ ማካተት እና እድገትን ማሳደግ",
+    "vision": {
+      "title": "ራዕያችን",
+      "description1": "በክልላችን ውስጥ ሊደርስ የሚችል፣ የፈጠራ እና የአባላት ማዕከላዊ የፋይናንስ አገልግሎቶችን የሚሰጥ አለቃ ዲጂታል የፋይናንስ ተባባሪ ሆኖ ለመሆን፣ ግለሰቦችን እና ማህበረሰቦችን የፋይናንስ ብልጽግና እና ደህንነትን ለማሳካት ማስቻል።",
+      "description2": "እያንዳንዱ አባል ሀብትን ለመገንባት፣ የቤተሰቦቻቸውን ወደፊት ለመጠበቅ እና ለተጠናከረ የማህበረሰብ ልማት ለመሳተፍ የሚያስፈልጋቸውን መሳሪያዎች እና ድጋፍ ያለው ወደፊት እናስባለን።"
+    },
+    "mission": {
+      "title": "ተልዕኮዎቻችን",
+      "description1": "በፈጠራ ዲጂታል መድረኮች በኩል የላቀ የፋይናንስ አገልግሎቶችን ማቅረብ፣ የፋይናንስ ዕውቀትን ማበረታታት፣ የቁጠባ ባህልን ማበረታታት እና ለአባላቶቻችን ምቹ የክሬዲት መፍትሄዎችን ማቅረብ።",
+      "description2": "ግላዊ አገልግሎትን ማቅረብ፣ ከፍተኛ የንጹህነት ደረጃዎችን ማቆየት እና የማህበረሰባችንን የሚቀየሩ ፍላጎቶችን ለመሟላት በተከታታይ ማስተካከል ቁርጠኛ ነን።"
+    },
+    "values": {
+      "title": "የመሠረት እሴቶቻችን",
+      "integrity": {
+        "title": "ንጹህነት",
+        "description": "በሁሉም ስራዎቻችን ሐቅነትን እና ግልጽነትን ማቆየት"
+      },
+      "innovation": {
+        "title": "ፈጠራ",
+        "description": "የላቀ መፍትሄዎችን ለመስጠት ቴክኖሎጂን ተቀባይነት ማግኘት"
+      },
+      "community": {
+        "title": "ማህበረሰብ",
+        "description": "አባላቶቻችንን እና ማህበረሰባችንን በሁሉም ነገር ውስጥ በመጀመሪያ ማስቀመጥ"
+      },
+      "excellence": {
+        "title": "የላቀነት",
+        "description": "በአገልግሎት አቅርቦት ከፍተኛ ጥራትን ለመገንባት ማሰራት"
+      }
+    }
+  },
+  "contact": {
+    "title": "ያግኙን",
+    "subtitle": "ከእኛ ጋር የፋይናንስ ጉዞዎን ለመጀመር ዝግጁ ነዎት? ዛሬ ቡድናችንን ያግኙ",
+    "address": {
+      "title": "አድራሻችን",
+      "content": "መከነት ሳኮ ሊሚትድ\n123 ዲጂታል አቨኑ\nየፋይናንስ ዲስትሪክት\nአዲስ አበባ፣ ኢትዮጵያ\nፖ.ቦ. 1000"
+    },
+    "phone": {
+      "title": "ስልክ"
+    },
+    "email": {
+      "title": "ኢሜይል"
+    },
+    "hours": {
+      "title": "የስራ ሰዓቶች",
+      "weekday": "ሰኞ - ዓርብ: 8:00 ጥዋት - 5:00 ከሰዓት",
+      "saturday": "ቅዳሜ: 9:00 ጥዋት - 1:00 ከሰዓት",
+      "sunday": "እሑድ: ዝግ",
+      "online": "24/7 የመስመር ላይ አገልግሎቶች ይገኛሉ"
+    },
+    "form": {
+      "title": "መልእክት ይላኩልን",
+      "firstName": "የመጀመሪያ ስም",
+      "lastName": "የአባት ስም",
+      "email": "ኢሜይል",
+      "phone": "የስልክ ቁጥር",
+      "subject": "ርዕስ",
+      "message": "መልእክት",
+      "firstNamePlaceholder": "የመጀመሪያ ስምዎን ያስገቡ",
+      "lastNamePlaceholder": "የአባት ስምዎን ያስገቡ",
+      "emailPlaceholder": "ኢሜይልዎን ያስገቡ",
+      "phonePlaceholder": "የስልክ ቁጥርዎን ያስገቡ",
+      "subjectPlaceholder": "የመልእክት ርዕስ ያስገቡ",
+      "messagePlaceholder": "መልእክትዎን ያስገቡ",
+      "sendMessage": "መልእክት ይላኩ",
+      "sending": "በመላክ ላይ...",
+      "success": "መልእክት በተሳካ ሁኔታ ተልኳል!",
+      "successDescription": "መልእክትዎን ስላሳየን እናመሰግናለን! በቅርብ ጊዜ እንመለስልዎታለን።",
+      "error": "መልእክት ላክ አልተሳካም",
+      "errorDescription": "እባክዎ ቆይተው እንደገና ይሞክሩ።"
+    }
+  },
+  "footer": {
+    "description": "ለደህንነቱ የተጠበቀ የፋይናንስ ወደፊት የፈጠራ ዲጂታል ባንኪንግ መፍትሄዎችን የሚሰጥ አስተማማኝ የፋይናንስ አጋር።",
+    "quickLinks": "ፈጣን አገናኞች",
+    "services": "አገልግሎቶች",
+    "contactInfo": "የጥናት መረጃ",
+    "home": "መነሻ",
+    "about": "ስለእኛ",
+    "visionMission": "ራዕይ እና ተልዕኮ",
+    "contact": "ያግኙን",
+    "savingsAccounts": "የቁጠባ ሂሳቦች",
+    "loansCredit": "ብድር እና ክሬዲት",
+    "mobileBanking": "የሞባይል ባንኪንግ",
+    "investmentPlans": "የኢንቨስትመንት ዕቅዶች",
+    "copyright": "© {year} መከነት ሳኮ ሊሚትድ። ሁሉም መብቶች የተጠበቁ ናቸው።"
+  },
+  "error": {
+    "title": "የሆነ ነገር ተሳስቷል",
+    "description": "ያልተጠበቀ ስህተት ተፈጥሯል። እባክዎ ገጹን ያድሱ።",
+    "errorLabel": "ስህተት"
+  },
+  "loanApplication": {
+    "title": "የብድር ማመልከቻ",
+    "subtitle": "ለመቀነት የገንዘብ ቁጠባና ብድር ኀብረት ሥራ ማኅበር(ኃ.የተ.)",
+    "sections": {
+      "applicantInfo": "የማመልከቻ መረጃ",
+      "loanRequest": "የብድር ዝርዝር መረጃ",
+      "financialStanding": "የፋይናንስ ሁኔታ እና የደጋፊ ሰነዶች",
+      "declaration": "ውሳኔ እና ፊርማ"
+    },
+    "fields": {
+      "accountNumber": "መለያ ቁጥር",
+      "fullName": "ስም ከነአያት",
+      "gender": "ፆታ",
+      "genderMale": "ወንድ",
+      "genderFemale": "ሴት",
+      "regularJob": "መደበኛ ሥራ",
+      "monthlyIncome": "የወር ገቢ",
+      "estimatedAnnualIncome": "የዓመቱ ገቢ ግምት",
+      "addressZone": "አድራሻ፣ ዘን",
+      "woreda": "ወረዳ",
+      "city": "ከተማ",
+      "kebele": "ቀበሌ",
+      "houseNumber": "የቤት ቁጥር",
+      "workPhone": "የመስሪያ ቤት ስልክ ቁጥር",
+      "personalMobile": "የግል ሞባይል ቁጥር",
+      "loanAmount": "የተጠየቀው የብድር መጠን",
+      "loanAmountInNumbers": "(በአሀዝ)",
+      "loanAmountInWords": "(በፊደል)",
+      "loanMonth": "ብድሩን የሚበደሩበት ወር",
+      "loanYear": "ብድሩን የሚበደሩበት ዓ.ም",
+      "loanReason": "ብድሩ የተጠየቀበት ምክንያት በዝርዝር",
+      "regularSavings": "በማኀበሩ ውስጥ ያላቸው የተጠራቀ መደበኛ ቁጠባ መጠን",
+      "lotterySavings": "በማኀበሩ ውስጥ ያላቸው የተጠራቀመ የዕጣ መጠን",
+      "totalSavings": "ድምር",
+      "otherDebts": "ሌላ እዳ እንዳለ/ከአንድ የበለጠ እዳ ካለ ለእያንዳንዱ ይገለጽ",
+      "otherDebtsDescription": "እያንዳንዱን እዳ ለየብቻ ይግለጹ",
+      "existingLoanAmount": "የብድሩ ልክ",
+      "loanSource": "የብድር ገንዘቡ የተገኘበት",
+      "lenderNameAddress": "የአበዳሪው ስምና አድራሻ",
+      "supportingDocuments": "በአባሪነት የተያያዙ ልዩ ልዩ ማስረጃዎች ዝርዝር",
+      "declarationAgree": "የተሰጠው መረጃ ትክክለኛ መሆኑን አረጋግጣለሁ፣ በማኅበሩ ደንቦች መሰረት ብድሩን እጠይቃለሁ፣ እና የተበደረውን ገንዘብ ለተጠቆመው ዓላማ ብቻ ለመጠቀም እና ሁሉንም የማኅበሩን መስፈርቶች ለመሟላት እስማማለሁ።",
+      "signature": "ፊርማ",
+      "signatureName": "ስም"
+    },
+    "declarationText": "በዚህ የብድር ማመልከቻ ውስጥ የተሰጠው መረጃ እውነት እና ትክክለኛ መሆኑን በራሴ እውቀት አረጋግጣለሁ። ማንኛውም የውሸት መረጃ ማመልከቻዬን ሊያስተላልፍ ወይም ሕጋዊ እርምጃ ሊወስድ እንደሚችል አስተውያለሁ። የብድር ገንዘቡን በዚህ ማመልከቻ ውስጥ በተጠቆመው ዓላማ ብቻ ለመጠቀም እና በለመቀነት የገንዘብ ቁጠባና ብድር ኀብረት ሥራ ማኅበር የተወሰኑትን ሁሉንም ውሎች እና ሁኔታዎች ለመከተል እስማማለሁ።",
+    "form": {
+      "submit": "ማመልከቻ ላክ",
+      "submitting": "በመላክ ላይ...",
+      "reset": "ቅጹን ዳግም አስጀምር",
+      "success": "ማመልከቻዎ በተሳካ ሁኔታ ተልኳል!",
+      "successDescription": "የብድር ማመልከቻዎን ስላሳየን እናመሰግናለን። እንገመግመዋለን እና በቅርብ ጊዜ እንመለስልዎታለን።",
+      "error": "ማመልከቻ ላክ አልተሳካም",
+      "errorDescription": "እባክዎ መረጃዎን ይፈትሹ እና እንደገና ይሞክሩ።"
+    }
+  },
+  "loanCommitteeDecision": {
+    "title": "የብድር ኮሚቴ ውሳኔ",
+    "subtitle": "ለመቀነት የገንዘብ ቁጠባና ብድር ኀብረት ሥራ ማኅበር(ኃ.የተ.)",
+    "sections": {
+      "header": "የሰነድ መረጃ",
+      "decision": "የብድር ኮሚቴ ውሳኔ",
+      "committeeMembers": "የኮሚቴ አባላት ፊርማዎች"
+    },
+    "fields": {
+      "documentNumber": "ቁጥር",
+      "date": "ቀን",
+      "to": "ለ",
+      "committeeMeetingDate": "የኮሚቴ ስብሰባ ቀን",
+      "committeeMeetingYear": "የኮሚቴ ስብሰባ ዓ.ም",
+      "committeeMember": "የኮሚቴ አባል (በአቶ/ወ/ሮ/ት/)",
+      "meetingLocation": "የስብሰባ ቦታ",
+      "loanAmountInNumbers": "የተጠየቀው የብድር መጠን",
+      "loanAmountInFederal": "የተጠየቀው የብድር መጠን (በፌደራል ብር)",
+      "approvedAmountInNumbers": "የተፈቀደው የብድር መጠን",
+      "approvedAmountInFederal": "የተፈቀደው የብድር መጠን (በፌደራል ብር)",
+      "inBirr": "በአሀዝ ብር",
+      "inFederalBirr": "በፌደራል ብር",
+      "decision": "ውሳኔ",
+      "decisionApproved": "ተፈቅዷል",
+      "decisionRejected": "አልተፈቀደም",
+      "decisionPartial": "በከፊል ተፈቅዷል",
+      "rejectionReason": "የውሳኔ ምክንያት",
+      "rejectionReasonDescription": "ብድሩ ካልተፈቀደለት ወይም በከፊል እንዲሰጣቸው ካልተደረገ የተወሰነበት ምክንያት",
+      "memberName": "የአባል ስም",
+      "signature": "ፊርማ"
+    },
+    "decisionText": {
+      "part1": "የብድር ኮሚቴው በላይ በተጠቀሰው ቀንና ዓ.ም ተሰብስቦ በብድር አሰጣጥ መመሪያ መሠረት የቀረበውን የብድር ማመልከቻ ከመረመረ በኋላ የሚከተለውን ውሳኔ ሰጥቷል:",
+      "part2": "በዝርዝር ከላይ በተመለከተው መሠረት ባልተለየ ድምጽ ወስነናል::"
+    },
+    "form": {
+      "submit": "ውሳኔ ላክ",
+      "submitting": "በመላክ ላይ...",
+      "reset": "ቅጹን ዳግም አስጀምር",
+      "success": "ውሳኔዎ በተሳካ ሁኔታ ተመዝግቧል!",
+      "successDescription": "የብድር ኮሚቴው ውሳኔ ተመዝግቧል።",
+      "error": "ውሳኔ ላክ አልተሳካም",
+      "errorDescription": "እባክዎ መረጃዎን ይፈትሹ እና እንደገና ይሞክሩ።"
+    }
+  }
+}
+

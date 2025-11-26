@@ -1,19 +1,6 @@
-import { Header } from "@/components/header"
-import { HeroSection } from "@/components/hero-section"
-import { VisionMissionSection } from "@/components/vision-mission-section"
-import { ContactSection } from "@/components/contact-section"
-import { Footer } from "@/components/footer"
+import { redirect } from 'next/navigation';
+import { routing } from '@/i18n/routing';
 
-export default function HomePage() {
-  return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <main>
-        <HeroSection />
-        <VisionMissionSection />
-        <ContactSection />
-      </main>
-      <Footer />
-    </div>
-  )
+export default function RootPage() {
+  redirect(`/${routing.defaultLocale}`);
 }

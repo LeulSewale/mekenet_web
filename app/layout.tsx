@@ -1,30 +1,12 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
+import { ReactNode } from 'react';
 
-const inter = Inter({ subsets: ["latin"] })
-
-export const metadata: Metadata = {
-  title: "Mekenet SACCO LTD - Your Trusted Financial Partner",
-  description:
-    "Innovative digital banking solutions, savings, and credit services to empower your financial growth and security.",
-  generator: "v0.dev",
-}
-
+// This is a minimal root layout for Next.js
+// The actual layout with translations is in [locale]/layout.tsx
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
-  )
+}: {
+  children: ReactNode;
+}) {
+  return children;
 }
+
