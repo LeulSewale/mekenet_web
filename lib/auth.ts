@@ -1,5 +1,5 @@
 import bcrypt from 'bcryptjs';
-import db from './db';
+import getDatabase from './db';
 
 export interface User {
   id: number;
@@ -29,6 +29,7 @@ export async function verifyPassword(password: string, hashedPassword: string): 
 }
 
 export function createUser(input: CreateUserInput): User {
+  const db = getDatabase();
   const { email, password, fullName, phone, accountNumber } = input;
   
   // Check if user already exists
@@ -53,11 +54,13 @@ export function createUser(input: CreateUserInput): User {
 }
 
 export function getUserByEmail(email: string): (User & { password: string }) | null {
+  const db = getDatabase();
   const user = db.prepare('SELECT * FROM users WHERE email = ?').get(email) as (User & { password: string }) | undefined;
   return user || null;
 }
 
 export function getUserById(id: number): User | null {
+  const db = getDatabase();
   const user = db.prepare('SELECT id, email, fullName, phone, accountNumber, role, createdAt, updatedAt FROM users WHERE id = ?').get(id) as User | undefined;
   return user || null;
 }

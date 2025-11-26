@@ -19,7 +19,9 @@
       "visionMission": "ራዕይ እና ተልዕኮ",
       "contact": "ያግኙን",
       "loanApplication": "የብድር ማመልከቻ",
-      "login": "ግባ"
+      "login": "ግባ",
+      "information": "መረጃ",
+      "readMore": "ተጨማሪ ያንብቡ →"
     }
   },
   "hero": {
@@ -158,6 +160,10 @@
     "loansCredit": "ብድር እና ክሬዲት",
     "mobileBanking": "የሞባይል ባንኪንግ",
     "investmentPlans": "የኢንቨስትመንት ዕቅዶች",
+    "location": "ሌም ሆቴል ማርኬቲንግ ማዕከል 3ኛ ወራት ቢሮ ቁጥር 308",
+    "poBox": "ፖ.ቦ.",
+    "poBoxNumber": "2761",
+    "phoneNumber": "0988103028",
     "copyright": "© {year} የመቀነት  ገንዘብ ቁጠባና ብድር ኃ/የተወሰነ ኅብረት ሥራ ማህበር። ሁሉም መብቶች የተጠበቁ ናቸው።"
   },
   "error": {

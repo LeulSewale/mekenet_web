@@ -17,6 +17,15 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Exclude better-sqlite3 from webpack bundling for serverless compatibility
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = config.externals || [];
+      // Mark better-sqlite3 as external to prevent bundling issues
+      config.externals.push('better-sqlite3');
+    }
+    return config;
+  },
 }
 
 export default withNextIntl(nextConfig);

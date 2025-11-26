@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
+import { Facebook, Twitter, Linkedin, Youtube, Mail, Music2, Send, Phone, MapPin } from "lucide-react"
 import { Logo } from "@/components/logo"
 
 export function Footer() {
@@ -28,35 +28,80 @@ export function Footer() {
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed max-w-sm">
               {t('description')}
             </p>
-            <div className="flex space-x-4 pt-2">
-              <Link 
-                href="#" 
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
-              >
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </Link>
-              <Link 
-                href="#" 
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
-              >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link 
-                href="#" 
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
-              >
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
-              </Link>
-              <Link 
-                href="#" 
-                className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
-              >
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
-              </Link>
+            <div className="space-y-3 pt-4">
+              <div className="flex flex-wrap gap-2">
+                <Link 
+                  href="https://www.facebook.com/profile.php?id=61559074432374" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
+                  title="Facebook"
+                >
+                  <Facebook className="h-5 w-5" />
+                  <span className="sr-only">Facebook</span>
+                </Link>
+                <Link 
+                  href="https://x.com/mekenet5567?t=eAnuOt-vyS2-TpU1fuYcGw&s=09" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
+                  title="Twitter/X"
+                >
+                  <Twitter className="h-5 w-5" />
+                  <span className="sr-only">Twitter</span>
+                </Link>
+                <Link 
+                  href="https://www.linkedin.com/in/mekenet-saving-136719306" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
+                  title="LinkedIn"
+                >
+                  <Linkedin className="h-5 w-5" />
+                  <span className="sr-only">LinkedIn</span>
+                </Link>
+                <Link 
+                  href="https://www.youtube.com/@MekenetSaving" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
+                  title="YouTube"
+                >
+                  <Youtube className="h-5 w-5" />
+                  <span className="sr-only">YouTube</span>
+                </Link>
+                <Link 
+                  href="https://www.tiktok.com/@mekenet56" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
+                  title="TikTok"
+                >
+                  <Music2 className="h-5 w-5" />
+                  <span className="sr-only">TikTok</span>
+                </Link>
+                {/* <Link 
+                  href="#" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
+                  title="Telegram"
+                >
+                  <Send className="h-5 w-5" />
+                  <span className="sr-only">Telegram</span>
+                </Link> */}
+              </div>
+              <div className="space-y-2 text-xs sm:text-sm text-muted-foreground">
+                <div className="flex items-center gap-2">
+                  <Mail className="h-3 w-3 sm:h-4 sm:w-4" />
+                  <a href="mailto:mekenet2015@gmail.com" className="hover:text-primary transition-colors break-all">
+                    mekenet2015@gmail.com
+                  </a>
+                </div>
+                <div className="text-xs text-muted-foreground/80">
+                  Login: mekenet2015@gmail.com
+                </div>
+              </div>
             </div>
           </div>
 
@@ -127,20 +172,24 @@ export function Footer() {
             <h4 className="text-base sm:text-lg font-bold">{t('contactInfo')}</h4>
             <ul className="space-y-3 text-sm sm:text-base text-muted-foreground">
               <li className="flex items-start gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                <span>123 Digital Avenue</span>
+                <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-primary" />
+                <span>{t('location')}</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                <span>Addis Ababa, Ethiopia</span>
+                <span>{t('poBox')}: {t('poBoxNumber')}</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                <span>+251 11 123 4567</span>
+                <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-primary" />
+                <a href={`tel:${t('phoneNumber')}`} className="hover:text-primary transition-colors">
+                  {t('phoneNumber')}
+                </a>
               </li>
               <li className="flex items-start gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                <span>info@mekenetsacco.et</span>
+                <Mail className="h-4 w-4 mt-0.5 flex-shrink-0 text-primary" />
+                <a href="mailto:mekenet2015@gmail.com" className="hover:text-primary transition-colors break-all">
+                  mekenet2015@gmail.com
+                </a>
               </li>
             </ul>
           </div>

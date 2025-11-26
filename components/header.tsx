@@ -3,13 +3,21 @@
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
 import { Button } from "@/components/ui/button"
-import { Menu } from "lucide-react"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Menu, Info, ChevronDown } from "lucide-react"
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "@/components/ui/sheet"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { Logo } from "@/components/logo"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { Card, CardContent } from "@/components/ui/card"
 
 export function Header() {
   const t = useTranslations('header')
+  const tIntro = useTranslations('introduction')
 
   const navItems = [
     { name: t('nav.home'), href: "/" },
@@ -50,6 +58,33 @@ export function Header() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
             </Link>
           ))}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="relative px-3 py-2 text-sm font-medium text-muted-foreground transition-all hover:text-foreground rounded-md hover:bg-accent group">
+                <Info className="h-4 w-4 mr-1" />
+                {t('nav.information')}
+                <ChevronDown className="h-3 w-3 ml-1" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-[600px] p-0">
+              <Card className="border-0 shadow-lg">
+                <CardContent className="p-6 max-h-[500px] overflow-y-auto">
+                  <h3 className="text-lg font-bold mb-4">{tIntro('title')}</h3>
+                  <div className="prose prose-sm max-w-none dark:prose-invert">
+                    <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
+                      <p>{tIntro('content.paragraph1')}</p>
+                      <p>{tIntro('content.paragraph2')}</p>
+                      <p>{tIntro('content.paragraph3')}</p>
+                      <p>{tIntro('content.paragraph4')}</p>
+                    </div>
+                  </div>
+                  <Link href="#introduction" className="mt-4 inline-block text-sm text-primary hover:underline">
+                    {t('nav.readMore')}
+                  </Link>
+                </CardContent>
+              </Card>
+            </DropdownMenuContent>
+          </DropdownMenu>
           <div className="ml-2 pl-2 border-l">
             <LanguageSwitcher />
           </div>
@@ -80,6 +115,10 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] sm:w-[300px]">
+              <SheetTitle className="sr-only">{t('title')} - {t('nav.home')}</SheetTitle>
+              <SheetDescription className="sr-only">
+                Navigation menu for {t('title')}
+              </SheetDescription>
               <div className="flex flex-col space-y-1 mt-8">
                 {navItems.map((item) => (
                   <Link
@@ -90,6 +129,13 @@ export function Header() {
                     {item.name}
                   </Link>
                 ))}
+                <Link
+                  href="#introduction"
+                  className="px-4 py-3 text-base font-medium transition-colors hover:text-primary hover:bg-accent rounded-lg flex items-center gap-2"
+                >
+                  <Info className="h-4 w-4" />
+                  {t('nav.information')}
+                </Link>
               </div>
             </SheetContent>
           </Sheet>

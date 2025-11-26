@@ -19,7 +19,9 @@
       "visionMission": "Vision & Mission",
       "contact": "Contact",
       "loanApplication": "Loan Application",
-      "login": "Login"
+      "login": "Login",
+      "information": "Information",
+      "readMore": "Read More →"
     }
   },
   "hero": {
@@ -158,6 +160,10 @@
     "loansCredit": "Loans & Credit",
     "mobileBanking": "Mobile Banking",
     "investmentPlans": "Investment Plans",
+    "location": "Lem hotel marketing center 3rd floor office no 308",
+    "poBox": "P.O. Box",
+    "poBoxNumber": "2761",
+    "phoneNumber": "0988103028",
     "copyright": "© {year} Mekenet SACCO LTD. All rights reserved."
   },
   "error": {
