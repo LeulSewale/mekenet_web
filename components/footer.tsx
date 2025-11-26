@@ -1,46 +1,59 @@
 "use client"
 
-import Image from "next/image"
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
+import { Logo } from "@/components/logo"
 
 export function Footer() {
   const t = useTranslations('footer')
 
   return (
-    <footer className="border-t bg-muted/50">
-      <div className="container px-4 py-6 sm:py-8 md:px-6 md:py-12">
-        <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-4">
+    <footer className="border-t bg-gradient-to-br from-muted/50 to-muted/30">
+      <div className="container px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+        <div className="grid gap-8 sm:gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
-          <div className="space-y-3 sm:space-y-4 sm:col-span-2 lg:col-span-1">
-            <div className="flex items-center space-x-2">
-              <Image
-                src="/logo.jpg"
-                alt="Mekenet SACCO LTD Logo"
-                width={28}
-                height={28}
-                className="sm:w-8 sm:h-8 rounded-full"
-              />
-              <span className="font-bold text-base sm:text-lg">Mekenet SACCO LTD</span>
+          <div className="space-y-4 sm:space-y-5 sm:col-span-2 lg:col-span-1">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full ring-2 ring-primary/20 bg-primary/10 flex items-center justify-center">
+                <Logo 
+                  width={40} 
+                  height={40} 
+                  className="w-full h-full rounded-full"
+                  iconClassName="w-6 h-6 sm:w-7 sm:h-7"
+                />
+              </div>
+              <span className="font-bold text-lg sm:text-xl">Mekenet SACCO LTD</span>
             </div>
-            <p className="text-xs sm:text-sm text-muted-foreground">
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed max-w-sm">
               {t('description')}
             </p>
-            <div className="flex space-x-3 sm:space-x-4">
-              <Link href="#" className="text-muted-foreground hover:text-primary">
+            <div className="flex space-x-4 pt-2">
+              <Link 
+                href="#" 
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
+              >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
+              <Link 
+                href="#" 
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
+              >
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
+              <Link 
+                href="#" 
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
+              >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
+              <Link 
+                href="#" 
+                className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
+              >
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
@@ -48,26 +61,30 @@ export function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4">
-            <h4 className="text-sm sm:text-base font-semibold">{t('quickLinks')}</h4>
-            <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
+          <div className="space-y-5">
+            <h4 className="text-base sm:text-lg font-bold">{t('quickLinks')}</h4>
+            <ul className="space-y-3 text-sm sm:text-base">
               <li>
-                <Link href="#home" className="text-muted-foreground hover:text-primary">
+                <Link href="#home" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group">
+                  <span className="h-1 w-1 rounded-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   {t('home', { defaultValue: 'Home' })}
                 </Link>
               </li>
               <li>
-                <Link href="#about" className="text-muted-foreground hover:text-primary">
+                <Link href="#about" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group">
+                  <span className="h-1 w-1 rounded-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   {t('about', { defaultValue: 'About Us' })}
                 </Link>
               </li>
               <li>
-                <Link href="#vision-mission" className="text-muted-foreground hover:text-primary">
+                <Link href="#vision-mission" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group">
+                  <span className="h-1 w-1 rounded-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   {t('visionMission', { defaultValue: 'Vision & Mission' })}
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-muted-foreground hover:text-primary">
+                <Link href="#contact" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group">
+                  <span className="h-1 w-1 rounded-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   {t('contact', { defaultValue: 'Contact' })}
                 </Link>
               </li>
@@ -75,26 +92,30 @@ export function Footer() {
           </div>
 
           {/* Services */}
-          <div className="space-y-4">
-            <h4 className="text-sm sm:text-base font-semibold">{t('services')}</h4>
-            <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
+          <div className="space-y-5">
+            <h4 className="text-base sm:text-lg font-bold">{t('services')}</h4>
+            <ul className="space-y-3 text-sm sm:text-base">
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary">
+                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group">
+                  <span className="h-1 w-1 rounded-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   {t('savingsAccounts')}
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary">
+                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group">
+                  <span className="h-1 w-1 rounded-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   {t('loansCredit')}
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary">
+                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group">
+                  <span className="h-1 w-1 rounded-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   {t('mobileBanking')}
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary">
+                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group">
+                  <span className="h-1 w-1 rounded-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   {t('investmentPlans')}
                 </Link>
               </li>
@@ -102,19 +123,31 @@ export function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-4">
-            <h4 className="text-sm sm:text-base font-semibold">{t('contactInfo')}</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>123 Digital Avenue</li>
-              <li>Addis Ababa, Ethiopia</li>
-              <li>+251 11 123 4567</li>
-              <li>info@mekenetsacco.et</li>
+          <div className="space-y-5">
+            <h4 className="text-base sm:text-lg font-bold">{t('contactInfo')}</h4>
+            <ul className="space-y-3 text-sm sm:text-base text-muted-foreground">
+              <li className="flex items-start gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                <span>123 Digital Avenue</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                <span>Addis Ababa, Ethiopia</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                <span>+251 11 123 4567</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+                <span>info@mekenetsacco.et</span>
+              </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-6 sm:mt-8 border-t pt-6 sm:pt-8 text-center text-xs sm:text-sm text-muted-foreground">
-          <p>{t('copyright', { year: new Date().getFullYear() })}</p>
+        <div className="mt-10 sm:mt-12 border-t pt-8 sm:pt-10 text-center">
+          <p className="text-sm sm:text-base text-muted-foreground">{t('copyright', { year: new Date().getFullYear() })}</p>
         </div>
       </div>
     </footer>

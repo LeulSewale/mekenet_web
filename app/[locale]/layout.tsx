@@ -46,7 +46,7 @@ export default async function LocaleLayout({
               description:
                 "Innovative digital banking solutions, savings, and credit services to empower your financial growth and security.",
               url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-              logo: `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/logo.jpg`,
+              logo: `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/logo.png`,
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "123 Digital Avenue, Financial District",

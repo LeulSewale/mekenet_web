@@ -89,88 +89,111 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-8 sm:py-12 md:py-16 lg:py-24 xl:py-32">
-      <div className="container px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl">{t('title')}</h2>
-            <p className="max-w-[900px] text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground">
+    <section id="contact" className="relative py-12 sm:py-16 md:py-20 lg:py-28 xl:py-32 overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5 -z-10" />
+      
+      <div className="container px-4 sm:px-6 lg:px-8 relative">
+        <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-6 text-center mb-12 sm:mb-16">
+          <div className="space-y-3 sm:space-y-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
+              {t('title')}
+            </h2>
+            <p className="max-w-[900px] mx-auto text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
               {t('subtitle')}
             </p>
           </div>
         </div>
 
-        <div className="mx-auto grid max-w-5xl items-start gap-6 py-8 sm:py-12 lg:grid-cols-2 lg:gap-8 xl:gap-12">
+        <div className="mx-auto grid max-w-6xl items-start gap-6 sm:gap-8 lg:grid-cols-2 lg:gap-10 xl:gap-12">
           {/* Contact Information */}
-          <div className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-2">
-                  <MapPin className="h-5 w-5" />
+          <div className="space-y-6 sm:space-y-8">
+            <Card className="shadow-lg hover:shadow-xl transition-shadow border-2">
+              <CardHeader className="bg-gradient-to-r from-primary/5 to-primary/10 border-b">
+                <CardTitle className="flex items-center space-x-3 text-lg sm:text-xl">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+                    <MapPin className="h-5 w-5" />
+                  </div>
                   <span>{t('address.title')}</span>
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground whitespace-pre-line">
+              <CardContent className="p-6">
+                <p className="text-muted-foreground whitespace-pre-line leading-relaxed text-sm sm:text-base">
                   {t('address.content')}
                 </p>
               </CardContent>
             </Card>
 
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center space-x-2 text-lg">
-                    <Phone className="h-4 w-4" />
+              <Card className="shadow-lg hover:shadow-xl transition-shadow border-2">
+                <CardHeader className="bg-gradient-to-r from-primary/5 to-primary/10 border-b">
+                  <CardTitle className="flex items-center space-x-3 text-base sm:text-lg">
+                    <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+                      <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
+                    </div>
                     <span>{t('phone.title')}</span>
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">+251 11 123 4567</p>
-                  <p className="text-muted-foreground">+251 11 987 6543</p>
+                <CardContent className="p-5 sm:p-6">
+                  <p className="text-muted-foreground text-sm sm:text-base">+251 11 123 4567</p>
+                  <p className="text-muted-foreground text-sm sm:text-base">+251 11 987 6543</p>
                 </CardContent>
               </Card>
 
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center space-x-2 text-lg">
-                    <Mail className="h-4 w-4" />
+              <Card className="shadow-lg hover:shadow-xl transition-shadow border-2">
+                <CardHeader className="bg-gradient-to-r from-primary/5 to-primary/10 border-b">
+                  <CardTitle className="flex items-center space-x-3 text-base sm:text-lg">
+                    <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+                      <Mail className="h-4 w-4 sm:h-5 sm:w-5" />
+                    </div>
                     <span>{t('email.title')}</span>
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">info@mekenetsacco.et</p>
-                  <p className="text-muted-foreground">support@mekenetsacco.et</p>
+                <CardContent className="p-5 sm:p-6">
+                  <p className="text-muted-foreground text-sm sm:text-base">info@mekenetsacco.et</p>
+                  <p className="text-muted-foreground text-sm sm:text-base">support@mekenetsacco.et</p>
                 </CardContent>
               </Card>
             </div>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-2">
-                  <Clock className="h-5 w-5" />
+            <Card className="shadow-lg hover:shadow-xl transition-shadow border-2">
+              <CardHeader className="bg-gradient-to-r from-primary/5 to-primary/10 border-b">
+                <CardTitle className="flex items-center space-x-3 text-lg sm:text-xl">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+                    <Clock className="h-5 w-5" />
+                  </div>
                   <span>{t('hours.title')}</span>
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-2 text-muted-foreground">
-                  <p>{t('hours.weekday')}</p>
-                  <p>{t('hours.saturday')}</p>
-                  <p>{t('hours.sunday')}</p>
-                  <p className="text-sm font-medium text-primary">{t('hours.online')}</p>
+              <CardContent className="p-6">
+                <div className="space-y-3 text-muted-foreground text-sm sm:text-base">
+                  <p className="flex items-center gap-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                    {t('hours.weekday')}
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                    {t('hours.saturday')}
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                    {t('hours.sunday')}
+                  </p>
+                  <p className="text-sm sm:text-base font-semibold text-primary mt-4 pt-4 border-t">
+                    {t('hours.online')}
+                  </p>
                 </div>
               </CardContent>
             </Card>
           </div>
 
           {/* Contact Form */}
-          <Card>
-            <CardHeader>
-              <CardTitle>{t('form.title')}</CardTitle>
+          <Card className="shadow-xl border-2">
+            <CardHeader className="bg-gradient-to-r from-primary/5 to-primary/10 border-b pb-6">
+              <CardTitle className="text-xl sm:text-2xl">{t('form.title')}</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="p-6 sm:p-8">
               <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5 sm:space-y-6">
                   <div className="grid gap-4 sm:grid-cols-2">
                     <FormField
                       control={form.control}
@@ -251,7 +274,11 @@ export function ContactSection() {
                       </FormItem>
                     )}
                   />
-                  <Button type="submit" className="w-full h-11" disabled={isSubmitting}>
+                  <Button 
+                    type="submit" 
+                    className="w-full h-11 sm:h-12 text-base shadow-lg hover:shadow-xl transition-all" 
+                    disabled={isSubmitting}
+                  >
                     {isSubmitting ? (
                       <>
                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />

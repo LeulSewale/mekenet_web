@@ -141,25 +141,30 @@ export function LoanApplicationForm() {
   }
 
   return (
-    <div className="container max-w-4xl mx-auto px-4 py-8 sm:py-12">
-      <Card>
-        <CardHeader>
-          <div className="flex items-center space-x-2">
-            <FileText className="h-6 w-6" />
+    <div className="container max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-12 lg:py-16">
+      <Card className="shadow-xl border-2">
+        <CardHeader className="bg-gradient-to-r from-primary/5 to-primary/10 border-b pb-6">
+          <div className="flex items-center space-x-3 sm:space-x-4">
+            <div className="flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-lg">
+              <FileText className="h-6 w-6 sm:h-7 sm:w-7" />
+            </div>
             <div>
-              <CardTitle className="text-2xl sm:text-3xl">{t('title')}</CardTitle>
-              <CardDescription className="mt-2">{t('subtitle')}</CardDescription>
+              <CardTitle className="text-2xl sm:text-3xl lg:text-4xl">{t('title')}</CardTitle>
+              <CardDescription className="mt-2 text-sm sm:text-base">{t('subtitle')}</CardDescription>
             </div>
           </div>
         </CardHeader>
-        <CardContent>
+        <CardContent className="p-6 sm:p-8 lg:p-10">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 sm:space-y-10">
               {/* Applicant Information Section */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold border-b pb-2">{t('sections.applicantInfo')}</h3>
+              <div className="space-y-6">
+                <div className="flex items-center space-x-3 pb-3 border-b-2">
+                  <div className="h-1 w-1 rounded-full bg-primary"></div>
+                  <h3 className="text-xl sm:text-2xl font-bold">{t('sections.applicantInfo')}</h3>
+                </div>
                 
-                <div className="grid gap-4 sm:grid-cols-2">
+                <div className="grid gap-5 sm:gap-6 sm:grid-cols-2">
                   <FormField
                     control={form.control}
                     name="accountNumber"
@@ -167,7 +172,7 @@ export function LoanApplicationForm() {
                       <FormItem>
                         <FormLabel>{t('fields.accountNumber')}</FormLabel>
                         <FormControl>
-                          <Input {...field} />
+                          <Input {...field} placeholder={t('fields.accountNumber')} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -193,21 +198,21 @@ export function LoanApplicationForm() {
                   control={form.control}
                   name="gender"
                   render={({ field }) => (
-                    <FormItem className="space-y-3">
-                      <FormLabel>{t('fields.gender')}</FormLabel>
+                    <FormItem className="space-y-4">
+                      <FormLabel className="text-base font-semibold">{t('fields.gender')}</FormLabel>
                       <FormControl>
                         <RadioGroup
                           onValueChange={field.onChange}
                           value={field.value}
-                          className="flex flex-col space-y-1"
+                          className="grid grid-cols-2 gap-4"
                         >
-                          <div className="flex items-center space-x-2">
-                            <RadioGroupItem value="male" id="male" />
-                            <Label htmlFor="male">{t('fields.genderMale')}</Label>
+                          <div className="flex items-center space-x-3 p-4 rounded-lg border-2 hover:border-primary/50 transition-all cursor-pointer has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                            <RadioGroupItem value="male" id="male" className="mt-0" />
+                            <Label htmlFor="male" className="cursor-pointer font-medium flex-1">{t('fields.genderMale')}</Label>
                           </div>
-                          <div className="flex items-center space-x-2">
-                            <RadioGroupItem value="female" id="female" />
-                            <Label htmlFor="female">{t('fields.genderFemale')}</Label>
+                          <div className="flex items-center space-x-3 p-4 rounded-lg border-2 hover:border-primary/50 transition-all cursor-pointer has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                            <RadioGroupItem value="female" id="female" className="mt-0" />
+                            <Label htmlFor="female" className="cursor-pointer font-medium flex-1">{t('fields.genderFemale')}</Label>
                           </div>
                         </RadioGroup>
                       </FormControl>
@@ -366,8 +371,11 @@ export function LoanApplicationForm() {
               </div>
 
               {/* Loan Request Details Section */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold border-b pb-2">{t('sections.loanRequest')}</h3>
+              <div className="space-y-6 pt-6 border-t">
+                <div className="flex items-center space-x-3 pb-3 border-b-2">
+                  <div className="h-1 w-1 rounded-full bg-primary"></div>
+                  <h3 className="text-xl sm:text-2xl font-bold">{t('sections.loanRequest')}</h3>
+                </div>
                 
                 <div className="grid gap-4 sm:grid-cols-2">
                   <FormField
@@ -446,8 +454,11 @@ export function LoanApplicationForm() {
               </div>
 
               {/* Financial Standing Section */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold border-b pb-2">{t('sections.financialStanding')}</h3>
+              <div className="space-y-6 pt-6 border-t">
+                <div className="flex items-center space-x-3 pb-3 border-b-2">
+                  <div className="h-1 w-1 rounded-full bg-primary"></div>
+                  <h3 className="text-xl sm:text-2xl font-bold">{t('sections.financialStanding')}</h3>
+                </div>
                 
                 <div className="grid gap-4 sm:grid-cols-3">
                   <FormField
@@ -568,11 +579,14 @@ export function LoanApplicationForm() {
               </div>
 
               {/* Declaration Section */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold border-b pb-2">{t('sections.declaration')}</h3>
+              <div className="space-y-6 pt-6 border-t">
+                <div className="flex items-center space-x-3 pb-3 border-b-2">
+                  <div className="h-1 w-1 rounded-full bg-primary"></div>
+                  <h3 className="text-xl sm:text-2xl font-bold">{t('sections.declaration')}</h3>
+                </div>
                 
-                <div className="bg-muted p-4 rounded-lg">
-                  <p className="text-sm text-muted-foreground whitespace-pre-line">
+                <div className="bg-gradient-to-br from-muted/50 to-muted p-5 sm:p-6 rounded-xl border border-primary/10">
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed whitespace-pre-line">
                     {t('declarationText')}
                   </p>
                 </div>
@@ -581,15 +595,16 @@ export function LoanApplicationForm() {
                   control={form.control}
                   name="declaration"
                   render={({ field }) => (
-                    <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4">
+                    <FormItem className="flex flex-row items-start space-x-4 space-y-0 rounded-xl border-2 p-5 sm:p-6 bg-gradient-to-br from-muted/30 to-muted/50 hover:border-primary/30 transition-all">
                       <FormControl>
                         <Checkbox
                           checked={field.value}
                           onCheckedChange={field.onChange}
+                          className="mt-1 h-5 w-5"
                         />
                       </FormControl>
-                      <div className="space-y-1 leading-none">
-                        <FormLabel className="cursor-pointer font-normal">
+                      <div className="space-y-1 leading-relaxed flex-1">
+                        <FormLabel className="cursor-pointer font-normal text-sm sm:text-base">
                           {t('fields.declarationAgree')}
                         </FormLabel>
                         <FormMessage />
@@ -629,16 +644,21 @@ export function LoanApplicationForm() {
                 </div>
               </div>
 
-              <div className="flex justify-end space-x-4 pt-4">
+              <div className="flex flex-col sm:flex-row justify-end gap-3 sm:gap-4 pt-6 border-t">
                 <Button
                   type="button"
                   variant="outline"
                   onClick={() => form.reset()}
                   disabled={isSubmitting}
+                  className="w-full sm:w-auto h-11 sm:h-12 text-base"
                 >
                   {t('form.reset')}
                 </Button>
-                <Button type="submit" disabled={isSubmitting} className="min-w-[120px]">
+                <Button 
+                  type="submit" 
+                  disabled={isSubmitting} 
+                  className="w-full sm:w-auto min-w-[160px] h-11 sm:h-12 text-base shadow-lg hover:shadow-xl transition-all"
+                >
                   {isSubmitting ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />

@@ -117,23 +117,28 @@ export function LoanCommitteeDecisionForm() {
   }
 
   return (
-    <div className="container max-w-4xl mx-auto px-4 py-8 sm:py-12">
-      <Card>
-        <CardHeader>
-          <div className="flex items-center space-x-2">
-            <FileCheck className="h-6 w-6" />
+    <div className="container max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-12 lg:py-16">
+      <Card className="shadow-xl border-2">
+        <CardHeader className="bg-gradient-to-r from-primary/5 to-primary/10 border-b pb-6">
+          <div className="flex items-center space-x-3 sm:space-x-4">
+            <div className="flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-lg">
+              <FileCheck className="h-6 w-6 sm:h-7 sm:w-7" />
+            </div>
             <div>
-              <CardTitle className="text-2xl sm:text-3xl">{t('title')}</CardTitle>
-              <CardDescription className="mt-2">{t('subtitle')}</CardDescription>
+              <CardTitle className="text-2xl sm:text-3xl lg:text-4xl">{t('title')}</CardTitle>
+              <CardDescription className="mt-2 text-sm sm:text-base">{t('subtitle')}</CardDescription>
             </div>
           </div>
         </CardHeader>
-        <CardContent>
+        <CardContent className="p-6 sm:p-8 lg:p-10">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 sm:space-y-10">
               {/* Header Section */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold border-b pb-2">{t('sections.header')}</h3>
+              <div className="space-y-6">
+                <div className="flex items-center space-x-3 pb-3 border-b-2">
+                  <div className="h-1 w-1 rounded-full bg-primary"></div>
+                  <h3 className="text-xl sm:text-2xl font-bold">{t('sections.header')}</h3>
+                </div>
                 
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div className="flex justify-end space-x-4">
@@ -184,10 +189,13 @@ export function LoanCommitteeDecisionForm() {
               </div>
 
               {/* Decision Details Section */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold border-b pb-2 text-center">{t('sections.decision')}</h3>
+              <div className="space-y-6 pt-6 border-t">
+                <div className="flex items-center justify-center space-x-3 pb-3 border-b-2">
+                  <div className="h-1 w-1 rounded-full bg-primary"></div>
+                  <h3 className="text-xl sm:text-2xl font-bold">{t('sections.decision')}</h3>
+                </div>
                 
-                <div className="bg-muted p-4 rounded-lg space-y-4">
+                <div className="bg-gradient-to-br from-muted/50 to-muted p-5 sm:p-6 lg:p-8 rounded-xl border border-primary/10 space-y-6">
                   <p className="text-sm text-muted-foreground">
                     {t('decisionText.part1')}
                   </p>
@@ -315,25 +323,25 @@ export function LoanCommitteeDecisionForm() {
                     control={form.control}
                     name="decision"
                     render={({ field }) => (
-                      <FormItem className="space-y-3">
-                        <FormLabel>{t('fields.decision')}</FormLabel>
+                      <FormItem className="space-y-4">
+                        <FormLabel className="text-base font-semibold">{t('fields.decision')}</FormLabel>
                         <FormControl>
                           <RadioGroup
                             onValueChange={field.onChange}
                             value={field.value}
-                            className="flex flex-col space-y-1"
+                            className="grid grid-cols-1 sm:grid-cols-3 gap-4"
                           >
-                            <div className="flex items-center space-x-2">
-                              <RadioGroupItem value="approved" id="approved" />
-                              <Label htmlFor="approved">{t('fields.decisionApproved')}</Label>
+                            <div className="flex items-center space-x-3 p-4 rounded-lg border-2 hover:border-green-500/50 transition-all cursor-pointer has-[:checked]:border-green-500 has-[:checked]:bg-green-500/5">
+                              <RadioGroupItem value="approved" id="approved" className="mt-0" />
+                              <Label htmlFor="approved" className="cursor-pointer font-medium flex-1 text-green-700 dark:text-green-400">{t('fields.decisionApproved')}</Label>
                             </div>
-                            <div className="flex items-center space-x-2">
-                              <RadioGroupItem value="rejected" id="rejected" />
-                              <Label htmlFor="rejected">{t('fields.decisionRejected')}</Label>
+                            <div className="flex items-center space-x-3 p-4 rounded-lg border-2 hover:border-red-500/50 transition-all cursor-pointer has-[:checked]:border-red-500 has-[:checked]:bg-red-500/5">
+                              <RadioGroupItem value="rejected" id="rejected" className="mt-0" />
+                              <Label htmlFor="rejected" className="cursor-pointer font-medium flex-1 text-red-700 dark:text-red-400">{t('fields.decisionRejected')}</Label>
                             </div>
-                            <div className="flex items-center space-x-2">
-                              <RadioGroupItem value="partial" id="partial" />
-                              <Label htmlFor="partial">{t('fields.decisionPartial')}</Label>
+                            <div className="flex items-center space-x-3 p-4 rounded-lg border-2 hover:border-yellow-500/50 transition-all cursor-pointer has-[:checked]:border-yellow-500 has-[:checked]:bg-yellow-500/5">
+                              <RadioGroupItem value="partial" id="partial" className="mt-0" />
+                              <Label htmlFor="partial" className="cursor-pointer font-medium flex-1 text-yellow-700 dark:text-yellow-400">{t('fields.decisionPartial')}</Label>
                             </div>
                           </RadioGroup>
                         </FormControl>
@@ -366,12 +374,15 @@ export function LoanCommitteeDecisionForm() {
               </div>
 
               {/* Committee Members Section */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold border-b pb-2">{t('sections.committeeMembers')}</h3>
+              <div className="space-y-6 pt-6 border-t">
+                <div className="flex items-center space-x-3 pb-3 border-b-2">
+                  <div className="h-1 w-1 rounded-full bg-primary"></div>
+                  <h3 className="text-xl sm:text-2xl font-bold">{t('sections.committeeMembers')}</h3>
+                </div>
                 
-                <div className="grid gap-4">
+                <div className="grid gap-4 sm:gap-6">
                   {form.watch("committeeMembers").map((_, index) => (
-                    <div key={index} className="grid gap-4 sm:grid-cols-2 border p-4 rounded-lg">
+                    <div key={index} className="grid gap-4 sm:grid-cols-2 border-2 p-5 sm:p-6 rounded-xl bg-card hover:shadow-md transition-shadow">
                       <FormField
                         control={form.control}
                         name={`committeeMembers.${index}.name`}
@@ -407,16 +418,21 @@ export function LoanCommitteeDecisionForm() {
                 </div>
               </div>
 
-              <div className="flex justify-end space-x-4 pt-4">
+              <div className="flex flex-col sm:flex-row justify-end gap-3 sm:gap-4 pt-6 border-t">
                 <Button
                   type="button"
                   variant="outline"
                   onClick={() => form.reset()}
                   disabled={isSubmitting}
+                  className="w-full sm:w-auto h-11 sm:h-12 text-base"
                 >
                   {t('form.reset')}
                 </Button>
-                <Button type="submit" disabled={isSubmitting} className="min-w-[120px]">
+                <Button 
+                  type="submit" 
+                  disabled={isSubmitting} 
+                  className="w-full sm:w-auto min-w-[160px] h-11 sm:h-12 text-base shadow-lg hover:shadow-xl transition-all"
+                >
                   {isSubmitting ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />

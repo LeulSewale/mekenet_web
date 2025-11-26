@@ -26,15 +26,15 @@ export function LanguageSwitcher() {
   }
 
   return (
-    <div className="flex items-center space-x-2">
-      <Globe className="h-4 w-4 text-muted-foreground" />
+    <div className="flex items-center space-x-2 sm:space-x-3">
+      <Globe className="h-4 w-4 sm:h-5 sm:w-5 text-muted-foreground" />
       <Select value={locale} onValueChange={handleLanguageChange}>
-        <SelectTrigger className="w-[120px] h-8">
+        <SelectTrigger className="w-[110px] sm:w-[130px] h-9 sm:h-10 border-2 hover:border-primary/50 transition-colors">
           <SelectValue />
         </SelectTrigger>
         <SelectContent>
           {languages.map((lang) => (
-            <SelectItem key={lang.code} value={lang.code}>
+            <SelectItem key={lang.code} value={lang.code} className="cursor-pointer">
               {lang.name}
             </SelectItem>
           ))}

@@ -18,7 +18,8 @@
       "about": "About",
       "visionMission": "Vision & Mission",
       "contact": "Contact",
-      "loanApplication": "Loan Application"
+      "loanApplication": "Loan Application",
+      "login": "Login"
     }
   },
   "hero": {
@@ -114,6 +115,34 @@
       "successDescription": "Thank you for your message! We'll get back to you soon.",
       "error": "Failed to send message",
       "errorDescription": "Please try again later."
+    }
+  },
+  "introduction": {
+    "title": "Introduction",
+    "subtitle": "Understanding Cooperative Societies and Their Role",
+    "content": {
+      "paragraph1": "Cooperative societies are free organizations established by people who voluntarily organize their money, knowledge, and energy to meet their common economic, social, and cultural needs through democratic control.",
+      "paragraph2": "According to Article 21, sub-articles 8 to 9 of Cooperative Societies Proclamation No. 985/2009, Savings and Credit Cooperative Societies are financial institutions established based on the free will and voluntary participation of people, founded on the spirit of cooperation, mutual assistance, and understanding, to provide microfinance services based on savings and credit.",
+      "paragraph3": "Savings means the systematic use of money or property, eliminating wastefulness, setting aside from income for future needs, managing needs in an organized way, reducing daily consumption to save for future consumption - in short, thinking ahead. However, the lack of a unified model governance rule that can serve all Savings and Credit Cooperative Societies in a consistent manner has been a gap in the uniformity established by cooperative societies.",
+      "paragraph4": "Most model governance rules prepared by cooperative societies are aligned with the Cooperative Societies Proclamation, and beyond that, there is a need to develop a system that allows leaders elected by the general assembly of cooperative societies to fulfill their mission, including expanding the powers of the general assembly through cooperative agreements and other internal agreements. Based on this, the Agency's Establishment Proclamation No. 85/2009 and the Federal Cooperative Societies Establishment Proclamation No. 985/2009 have made it necessary to prepare this Model Governance Rule for Savings and Credit Cooperative Societies."
+    },
+    "keyPoints": {
+      "cooperation": {
+        "title": "Voluntary Cooperation",
+        "description": "People voluntarily organize their resources to meet common needs"
+      },
+      "legal": {
+        "title": "Legal Framework",
+        "description": "Based on Cooperative Societies Proclamation No. 985/2009"
+      },
+      "savings": {
+        "title": "Savings Culture",
+        "description": "Promoting systematic savings and financial planning"
+      },
+      "governance": {
+        "title": "Democratic Governance",
+        "description": "Democratic control and transparent management"
+      }
     }
   },
   "footer": {
@@ -234,6 +263,52 @@
       "successDescription": "The loan committee decision has been recorded.",
       "error": "Failed to submit decision",
       "errorDescription": "Please check your information and try again."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "subtitle": "Sign in to your account to access your services",
+      "fields": {
+        "email": "Email Address",
+        "emailPlaceholder": "Enter your email",
+        "password": "Password",
+        "passwordPlaceholder": "Enter your password"
+      },
+      "form": {
+        "submit": "Sign In",
+        "submitting": "Signing in...",
+        "success": "Login successful!",
+        "successDescription": "Welcome back! Redirecting...",
+        "error": "Login failed",
+        "errorDescription": "Invalid email or password. Please try again."
+      }
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Register for a new account to get started",
+      "fields": {
+        "fullName": "Full Name",
+        "fullNamePlaceholder": "Enter your full name",
+        "email": "Email Address",
+        "emailPlaceholder": "Enter your email",
+        "phone": "Phone Number",
+        "phonePlaceholder": "Enter your phone number",
+        "accountNumber": "Account Number",
+        "accountNumberPlaceholder": "Enter your account number (optional)",
+        "password": "Password",
+        "passwordPlaceholder": "Enter your password (min. 6 characters)",
+        "confirmPassword": "Confirm Password",
+        "confirmPasswordPlaceholder": "Confirm your password"
+      },
+      "form": {
+        "submit": "Create Account",
+        "submitting": "Creating account...",
+        "success": "Registration successful!",
+        "successDescription": "Your account has been created. You can now login.",
+        "error": "Registration failed",
+        "errorDescription": "Please check your information and try again."
+      }
     }
   }
 }
