@@ -18,6 +18,7 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 import { useToast } from "@/hooks/use-toast"
+import { useRouter } from '@/i18n/routing'
 
 const registrationSchema = z.object({
   email: z.string().email("Please enter a valid email address"),
@@ -39,6 +40,7 @@ export function RegistrationForm() {
   const [showPassword, setShowPassword] = useState(false)
   const [showConfirmPassword, setShowConfirmPassword] = useState(false)
   const { toast } = useToast()
+  const router = useRouter()
 
   const form = useForm<RegistrationFormValues>({
     resolver: zodResolver(registrationSchema),
@@ -73,7 +75,10 @@ export function RegistrationForm() {
           description: t('form.successDescription'),
         })
         form.reset()
-        // Optionally redirect to login or show success message
+        // Redirect to login page after successful registration
+        setTimeout(() => {
+          router.push('/login')
+        }, 1500)
       } else {
         toast({
           title: t('form.error'),
@@ -268,6 +273,20 @@ export function RegistrationForm() {
                 </>
               )}
             </Button>
+
+            <div className="text-center mt-6 pt-6 border-t">
+              <p className="text-sm text-muted-foreground mb-3">
+                {t('form.hasAccount')}
+              </p>
+              <Button
+                type="button"
+                variant="outline"
+                className="w-full"
+                onClick={() => router.push('/login')}
+              >
+                {t('form.loginLink')}
+              </Button>
+            </div>
           </form>
         </Form>
       </CardContent>

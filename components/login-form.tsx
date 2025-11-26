@@ -168,6 +168,20 @@ export function LoginForm() {
                 </>
               )}
             </Button>
+
+            <div className="text-center mt-6 pt-6 border-t">
+              <p className="text-sm text-muted-foreground mb-3">
+                {t('form.noAccount')}
+              </p>
+              <Button
+                type="button"
+                variant="outline"
+                className="w-full"
+                onClick={() => router.push('/register')}
+              >
+                {t('form.signupLink')}
+              </Button>
+            </div>
           </form>
         </Form>
       </CardContent>

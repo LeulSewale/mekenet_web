@@ -287,7 +287,9 @@
         "success": "Login successful!",
         "successDescription": "Welcome back! Redirecting...",
         "error": "Login failed",
-        "errorDescription": "Invalid email or password. Please try again."
+        "errorDescription": "Invalid email or password. Please try again.",
+        "noAccount": "Don't have an account?",
+        "signupLink": "Sign Up"
       }
     },
     "register": {
@@ -311,10 +313,13 @@
         "submit": "Create Account",
         "submitting": "Creating account...",
         "success": "Registration successful!",
-        "successDescription": "Your account has been created. You can now login.",
+        "successDescription": "Your account has been created. Redirecting to login...",
         "error": "Registration failed",
-        "errorDescription": "Please check your information and try again."
-      }
+        "errorDescription": "Please check your information and try again.",
+        "hasAccount": "Already have an account?",
+        "loginLink": "Sign In"
+      },
+      "backToLogin": "Back to Login"
     }
   }
 }
