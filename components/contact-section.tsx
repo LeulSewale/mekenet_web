@@ -9,7 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { MapPin, Phone, Mail, Clock, Loader2 } from "lucide-react"
+import { MapPin, Phone, Mail, Clock, Loader2, ExternalLink } from "lucide-react"
 import {
   Form,
   FormControl,
@@ -117,9 +117,53 @@ export function ContactSection() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-6">
-                <p className="text-muted-foreground whitespace-pre-line leading-relaxed text-sm sm:text-base">
+                <p className="text-muted-foreground whitespace-pre-line leading-relaxed text-sm sm:text-base mb-4">
                   {t('address.content')}
                 </p>
+                
+                {/* Embedded Map */}
+                <div className="mb-4 rounded-lg overflow-hidden border-2 border-muted shadow-md bg-muted/50 relative group">
+                  <iframe
+                    src="https://www.google.com/maps?q=Lem+Hotel+Marketing+Center,+3rd+Floor,+Office+No.+308,+Addis+Ababa&output=embed"
+                    width="100%"
+                    height="300"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="w-full"
+                    title={t('address.mapTitle')}
+                  />
+                  {/* Floating button to open full map - positioned to not block map interaction */}
+                  <a
+                    href="https://maps.app.goo.gl/ec5meAEdVE3Pq4Lt6?g_st=atm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute top-2 right-2 z-10 opacity-0 group-hover:opacity-100 transition-opacity bg-primary text-primary-foreground px-3 py-1.5 rounded-md shadow-lg hover:shadow-xl hover:bg-primary/90 flex items-center gap-1.5 text-xs sm:text-sm font-medium"
+                    aria-label={t('address.openFullMap')}
+                  >
+                    <MapPin className="h-3 w-3 sm:h-4 sm:w-4" />
+                    <span>{t('address.openFullMap')}</span>
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                </div>
+
+                <Button
+                  asChild
+                  variant="outline"
+                  className="w-full sm:w-auto"
+                >
+                  <a
+                    href="https://maps.app.goo.gl/ec5meAEdVE3Pq4Lt6?g_st=atm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2"
+                  >
+                    <MapPin className="h-4 w-4" />
+                    {t('address.viewOnMap')}
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                </Button>
               </CardContent>
             </Card>
 

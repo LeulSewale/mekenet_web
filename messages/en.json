@@ -82,7 +82,10 @@
     "subtitle": "Ready to start your financial journey with us? Contact our team today",
     "address": {
       "title": "Our Address",
-      "content": "Mekenet SACCO LTD\n123 Digital Avenue\nFinancial District\nAddis Ababa, Ethiopia\nP.O. Box 1000"
+      "content": "Mekenet SACCO LTD\nLem Hotel Marketing Center\n3rd Floor, Office No. 308\nAddis Ababa, Ethiopia\nP.O. Box 2761",
+      "viewOnMap": "View on Map",
+      "mapTitle": "Mekenet SACCO LTD Location",
+      "openFullMap": "Open in Google Maps"
     },
     "phone": {
       "title": "Phone"
@@ -164,6 +167,7 @@
     "poBox": "P.O. Box",
     "poBoxNumber": "2761",
     "phoneNumber": "0988103028",
+    "viewOnMap": "View on Map",
     "copyright": "© {year} Mekenet SACCO LTD. All rights reserved."
   },
   "error": {

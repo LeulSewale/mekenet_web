@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
-import { Facebook, Twitter, Linkedin, Youtube, Mail, Music2, Send, Phone, MapPin } from "lucide-react"
+import { Facebook, Twitter, Linkedin, Youtube, Mail, Music2, Send, Phone, MapPin, ExternalLink } from "lucide-react"
 import { Logo } from "@/components/logo"
 
 export function Footer() {
@@ -173,7 +173,18 @@ export function Footer() {
             <ul className="space-y-3 text-sm sm:text-base text-muted-foreground">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-primary" />
-                <span>{t('location')}</span>
+                <div className="flex flex-col gap-1">
+                  <span>{t('location')}</span>
+                  <a
+                    href="https://maps.app.goo.gl/ec5meAEdVE3Pq4Lt6?g_st=atm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-primary hover:underline flex items-center gap-1"
+                  >
+                    {t('viewOnMap')}
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                </div>
               </li>
               <li className="flex items-start gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
